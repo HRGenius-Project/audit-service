@@ -33,3 +33,6 @@ eureka:
 app:
   rabbitmq:
     queue: attendance.queue
+    leave-queue: leave.queue
+    exchange: hrgenius.exchange
+    routing-key-leave: leave.approved
