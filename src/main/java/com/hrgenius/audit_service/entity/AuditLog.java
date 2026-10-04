@@ -20,13 +20,13 @@ public class AuditLog {
     private Long id;
 
     @Column(nullable = false)
-    private String serviceSource; // E.g., ATTENDANCE_SERVICE, EMPLOYEE_SERVICE
+    private String serviceSource; // E.g., ATTENDANCE_SERVICE, EMPLOYEE_SERVICE, PAYROLL_SERVICE
 
     @Column(nullable = false)
-    private String action; // E.g., PUNCH_IN, PUNCH_OUT
+    private String action; // E.g., PUNCH_IN, PUNCH_OUT, PAYROLL_PROCESSED
 
     @Column(nullable = false)
-    private String performedBy; // employeeCode or admin ID
+    private String performedBy; // employeeCode or admin ID or SYSTEM
 
     @Lob
     @Column(columnDefinition = "TEXT")
